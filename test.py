@@ -1,3 +1,9 @@
-import gmic
+import os
 
-gmic.run("frames/frame_000000.jpg blur 4 output test.png")
+INPUT_PATH = "./keep/"
+OUTPUT_PATH = "./dehazed_frames/"
+test = os.listdir(INPUT_PATH)
+amount = len(test)
+print(int(amount))
+# for file in test:
+#     print(str(file))
